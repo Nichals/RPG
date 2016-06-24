@@ -47,6 +47,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultarAventura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAventura.Designer.cs">
+      <DependentUpon>ConsultarAventura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarEncontro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarEncontro.Designer.cs">
+      <DependentUpon>ConsultarEncontro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarItem.Designer.cs">
+      <DependentUpon>ConsultarItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarMonstro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarMonstro.Designer.cs">
+      <DependentUpon>ConsultarMonstro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarPersonagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarPersonagem.Designer.cs">
+      <DependentUpon>ConsultarPersonagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="CriacaoAventura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +115,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConsultarAventura.resx">
+      <DependentUpon>ConsultarAventura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarMonstro.resx">
+      <DependentUpon>ConsultarMonstro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarPersonagem.resx">
+      <DependentUpon>ConsultarPersonagem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CriacaoAventura.resx">
       <DependentUpon>CriacaoAventura.cs</DependentUpon>
     </EmbeddedResource>

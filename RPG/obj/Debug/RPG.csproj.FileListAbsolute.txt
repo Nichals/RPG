@@ -12,3 +12,6 @@ C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.CriacaoEncontro.resources
 C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.CriacaoItem.resources
 C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.CriacaoMonstro.resources
 C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.CriacaoAventura.resources
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.ConsultarAventura.resources
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.ConsultarMonstro.resources
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.ConsultarPersonagem.resources

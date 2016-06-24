@@ -13,10 +13,18 @@ namespace RPG
     public partial class PaginaPrincipal : Form
     {
         CriacaoPersonagem criacaoPersonagem;
+        ConsultarPersonagem consultarPersonagem;
         CriacaoEncontro criacaoEncontro;
+        ConsultarEncontro consultarEncontro;
         CriacaoItem criacaoItem;
+        ConsultarItem consultarItem;
         CriacaoMonstro criacaoMonstro;
+        ConsultarMonstro consultarMonstro;
         CriacaoAventura criacaoAventura;
+        ConsultarAventura consultarAventura;
+
+
+
         public PaginaPrincipal()
         {
             InitializeComponent();
@@ -52,6 +60,36 @@ namespace RPG
         {
             criacaoAventura = new CriacaoAventura();
             criacaoAventura.ShowDialog();
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            consultarAventura = new ConsultarAventura();
+            consultarAventura.ShowDialog();
+        }
+
+        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            consultarPersonagem = new ConsultarPersonagem();
+            consultarPersonagem.ShowDialog();
+        }
+
+        private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            consultarMonstro = new ConsultarMonstro();
+            consultarMonstro.ShowDialog();
+        }
+
+        private void consultarItem_Click(object sender, EventArgs e)
+        {
+            consultarItem = new ConsultarItem();
+            consultarItem.ShowDialog();
+        }
+
+        private void consultarEncontro_Click(object sender, EventArgs e)
+        {
+            consultarEncontro = new ConsultarEncontro();
+            consultarEncontro.ShowDialog();
         }
     }
 }
