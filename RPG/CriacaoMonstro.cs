@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RPG
 {
-    public partial class Form1 : Form
+    public partial class CriacaoMonstro : Form
     {
-        public Form1()
+        public CriacaoMonstro()
         {
             InitializeComponent();
         }

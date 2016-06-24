@@ -1,6 +1,6 @@
 ﻿namespace RPG
 {
-    partial class Form1
+    partial class PaginaPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -41,6 +41,9 @@
             this.itensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.encontroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +53,8 @@
             this.aventuraToolStripMenuItem,
             this.personagemToolStripMenuItem,
             this.monstrosToolStripMenuItem,
-            this.itensToolStripMenuItem});
+            this.itensToolStripMenuItem,
+            this.encontroToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(784, 24);
@@ -71,11 +75,12 @@
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
             this.novoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.novoToolStripMenuItem.Text = "Novo";
+            this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click_1);
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
             // personagemToolStripMenuItem
@@ -92,11 +97,12 @@
             this.novoToolStripMenuItem1.Name = "novoToolStripMenuItem1";
             this.novoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.novoToolStripMenuItem1.Text = "Novo";
+            this.novoToolStripMenuItem1.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem1
             // 
             this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
-            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.consultarToolStripMenuItem1.Text = "Consultar";
             // 
             // monstrosToolStripMenuItem
@@ -105,19 +111,20 @@
             this.novoToolStripMenuItem2,
             this.consultarToolStripMenuItem2});
             this.monstrosToolStripMenuItem.Name = "monstrosToolStripMenuItem";
-            this.monstrosToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.monstrosToolStripMenuItem.Text = "Monstros";
+            this.monstrosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.monstrosToolStripMenuItem.Text = "Monstro";
             // 
             // novoToolStripMenuItem2
             // 
             this.novoToolStripMenuItem2.Name = "novoToolStripMenuItem2";
             this.novoToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.novoToolStripMenuItem2.Text = "Novo";
+            this.novoToolStripMenuItem2.Click += new System.EventHandler(this.novoToolStripMenuItem2_Click);
             // 
             // consultarToolStripMenuItem2
             // 
             this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
-            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(125, 22);
             this.consultarToolStripMenuItem2.Text = "Consultar";
             // 
             // itensToolStripMenuItem
@@ -134,14 +141,37 @@
             this.novoToolStripMenuItem3.Name = "novoToolStripMenuItem3";
             this.novoToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.novoToolStripMenuItem3.Text = "Novo";
+            this.novoToolStripMenuItem3.Click += new System.EventHandler(this.novoToolStripMenuItem3_Click);
             // 
             // consultarToolStripMenuItem3
             // 
             this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
-            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(125, 22);
             this.consultarToolStripMenuItem3.Text = "Consultar";
             // 
-            // Form1
+            // encontroToolStripMenuItem
+            // 
+            this.encontroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem4,
+            this.consultarToolStripMenuItem4});
+            this.encontroToolStripMenuItem.Name = "encontroToolStripMenuItem";
+            this.encontroToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.encontroToolStripMenuItem.Text = "Encontro";
+            // 
+            // novoToolStripMenuItem4
+            // 
+            this.novoToolStripMenuItem4.Name = "novoToolStripMenuItem4";
+            this.novoToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.novoToolStripMenuItem4.Text = " Novo";
+            this.novoToolStripMenuItem4.Click += new System.EventHandler(this.novoToolStripMenuItem4_Click);
+            // 
+            // consultarToolStripMenuItem4
+            // 
+            this.consultarToolStripMenuItem4.Name = "consultarToolStripMenuItem4";
+            this.consultarToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
+            this.consultarToolStripMenuItem4.Text = "Consultar";
+            // 
+            // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,8 +180,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(800, 800);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "PaginaPrincipal";
+            this.Text = "RPG";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -174,6 +204,9 @@
         private System.Windows.Forms.ToolStripMenuItem itensToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem encontroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem4;
     }
 }
 
