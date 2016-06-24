@@ -16,5 +16,23 @@ namespace RPG
         {
             InitializeComponent();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbCategoria.SelectedText.Equals("Armadura")){
+
+            }
+            else if (cbCategoria.SelectedText.Equals("Arma")){
+
+            }
+            else if (cbCategoria.SelectedText.Equals("Item")){
+
+            }
+        }
     }
 }

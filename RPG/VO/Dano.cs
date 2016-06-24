@@ -8,7 +8,8 @@ namespace RPG.VO
 {
     class Dano
     {
-        public String valor { get; set; }
+        public int quantidade { get; set; }
+        public String dado { get; set; }
         public String tipo { get; set; }
     }
 }
