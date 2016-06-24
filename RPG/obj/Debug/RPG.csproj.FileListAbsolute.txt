@@ -1,1 +1,9 @@
 C:\Users\nicha\Source\Repos\RPG\RPG\bin\Debug\RPG.exe.config
+C:\Users\nicha\Source\Repos\RPG\RPG\bin\Debug\RPG.exe
+C:\Users\nicha\Source\Repos\RPG\RPG\bin\Debug\RPG.pdb
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.csprojResolveAssemblyReference.cache
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.Form1.resources
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.Properties.Resources.resources
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.csproj.GenerateResource.Cache
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.exe
+C:\Users\nicha\Source\Repos\RPG\RPG\obj\Debug\RPG.pdb
