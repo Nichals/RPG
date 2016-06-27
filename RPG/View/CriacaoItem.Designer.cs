@@ -62,17 +62,25 @@
             this.label13 = new System.Windows.Forms.Label();
             this.tbMaxModificador = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.tbTipo = new System.Windows.Forms.ComboBox();
+            this.cbTipo = new System.Windows.Forms.ComboBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tbTempoVestir = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cbxCategoriaArmadura = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnSalvarItem
             // 
-            this.btnSalvarItem.Location = new System.Drawing.Point(369, 350);
+            this.btnSalvarItem.Location = new System.Drawing.Point(41, 395);
             this.btnSalvarItem.Name = "btnSalvarItem";
             this.btnSalvarItem.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarItem.TabIndex = 0;
             this.btnSalvarItem.Text = "Salvar";
             this.btnSalvarItem.UseVisualStyleBackColor = true;
+            this.btnSalvarItem.Click += new System.EventHandler(this.btnSalvarItem_Click);
             // 
             // lblNome
             // 
@@ -215,11 +223,12 @@
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(121, 21);
             this.cbCategoria.TabIndex = 20;
+            this.cbCategoria.SelectedIndexChanged += new System.EventHandler(this.cbCategoria_SelectedIndexChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 214);
+            this.label7.Location = new System.Drawing.Point(12, 253);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 13);
             this.label7.TabIndex = 21;
@@ -244,15 +253,17 @@
             // 
             // cbDadoDano
             // 
+            this.cbDadoDano.Enabled = false;
             this.cbDadoDano.FormattingEnabled = true;
-            this.cbDadoDano.Location = new System.Drawing.Point(104, 211);
+            this.cbDadoDano.Location = new System.Drawing.Point(103, 250);
             this.cbDadoDano.Name = "cbDadoDano";
             this.cbDadoDano.Size = new System.Drawing.Size(72, 21);
             this.cbDadoDano.TabIndex = 24;
             // 
             // tbQuantidadeDano
             // 
-            this.tbQuantidadeDano.Location = new System.Drawing.Point(53, 211);
+            this.tbQuantidadeDano.Enabled = false;
+            this.tbQuantidadeDano.Location = new System.Drawing.Point(52, 250);
             this.tbQuantidadeDano.Name = "tbQuantidadeDano";
             this.tbQuantidadeDano.Size = new System.Drawing.Size(45, 20);
             this.tbQuantidadeDano.TabIndex = 25;
@@ -260,7 +271,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(154, 182);
+            this.label9.Location = new System.Drawing.Point(13, 314);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 13);
             this.label9.TabIndex = 26;
@@ -268,15 +279,17 @@
             // 
             // cbCategoriaArma
             // 
+            this.cbCategoriaArma.Enabled = false;
             this.cbCategoriaArma.FormattingEnabled = true;
-            this.cbCategoriaArma.Location = new System.Drawing.Point(225, 179);
+            this.cbCategoriaArma.Location = new System.Drawing.Point(71, 311);
             this.cbCategoriaArma.Name = "cbCategoriaArma";
             this.cbCategoriaArma.Size = new System.Drawing.Size(121, 21);
             this.cbCategoriaArma.TabIndex = 27;
             // 
             // tbMinForca
             // 
-            this.tbMinForca.Location = new System.Drawing.Point(102, 276);
+            this.tbMinForca.Enabled = false;
+            this.tbMinForca.Location = new System.Drawing.Point(371, 277);
             this.tbMinForca.MaxLength = 2;
             this.tbMinForca.Name = "tbMinForca";
             this.tbMinForca.Size = new System.Drawing.Size(72, 20);
@@ -285,7 +298,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(10, 279);
+            this.label10.Location = new System.Drawing.Point(269, 280);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(88, 13);
             this.label10.TabIndex = 29;
@@ -294,7 +307,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(222, 275);
+            this.label11.Location = new System.Drawing.Point(269, 314);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(59, 13);
             this.label11.TabIndex = 30;
@@ -303,7 +316,7 @@
             // cbFurtividade
             // 
             this.cbFurtividade.AutoSize = true;
-            this.cbFurtividade.Location = new System.Drawing.Point(300, 275);
+            this.cbFurtividade.Location = new System.Drawing.Point(347, 314);
             this.cbFurtividade.Name = "cbFurtividade";
             this.cbFurtividade.Size = new System.Drawing.Size(92, 17);
             this.cbFurtividade.TabIndex = 31;
@@ -313,7 +326,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 312);
+            this.label12.Location = new System.Drawing.Point(269, 249);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(21, 13);
             this.label12.TabIndex = 32;
@@ -321,7 +334,8 @@
             // 
             // tbCa
             // 
-            this.tbCa.Location = new System.Drawing.Point(51, 309);
+            this.tbCa.Enabled = false;
+            this.tbCa.Location = new System.Drawing.Point(308, 246);
             this.tbCa.MaxLength = 2;
             this.tbCa.Name = "tbCa";
             this.tbCa.Size = new System.Drawing.Size(47, 20);
@@ -330,7 +344,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(104, 312);
+            this.label13.Location = new System.Drawing.Point(361, 249);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(36, 13);
             this.label13.TabIndex = 34;
@@ -338,36 +352,107 @@
             // 
             // tbMaxModificador
             // 
-            this.tbMaxModificador.Location = new System.Drawing.Point(147, 309);
+            this.tbMaxModificador.Enabled = false;
+            this.tbMaxModificador.Location = new System.Drawing.Point(404, 246);
             this.tbMaxModificador.MaxLength = 2;
             this.tbMaxModificador.Name = "tbMaxModificador";
-            this.tbMaxModificador.Size = new System.Drawing.Size(29, 20);
+            this.tbMaxModificador.Size = new System.Drawing.Size(39, 20);
             this.tbMaxModificador.TabIndex = 35;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(225, 312);
+            this.label14.Location = new System.Drawing.Point(12, 283);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 13);
             this.label14.TabIndex = 36;
             this.label14.Text = "Tipo de dano";
             // 
-            // tbTipo
+            // cbTipo
             // 
-            this.tbTipo.FormattingEnabled = true;
-            this.tbTipo.Location = new System.Drawing.Point(310, 312);
-            this.tbTipo.Name = "tbTipo";
-            this.tbTipo.Size = new System.Drawing.Size(121, 21);
-            this.tbTipo.TabIndex = 37;
+            this.cbTipo.Enabled = false;
+            this.cbTipo.FormattingEnabled = true;
+            this.cbTipo.Location = new System.Drawing.Point(90, 280);
+            this.cbTipo.Name = "cbTipo";
+            this.cbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cbTipo.TabIndex = 37;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(325, 395);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 38;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(269, 344);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(92, 13);
+            this.label15.TabIndex = 39;
+            this.label15.Text = "Tempo para vestir";
+            // 
+            // tbTempoVestir
+            // 
+            this.tbTempoVestir.Enabled = false;
+            this.tbTempoVestir.Location = new System.Drawing.Point(364, 341);
+            this.tbTempoVestir.Name = "tbTempoVestir";
+            this.tbTempoVestir.Size = new System.Drawing.Size(79, 20);
+            this.tbTempoVestir.TabIndex = 40;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(75, 223);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(31, 13);
+            this.label16.TabIndex = 41;
+            this.label16.Text = "Arma";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(361, 223);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(52, 13);
+            this.label17.TabIndex = 42;
+            this.label17.Text = "Armadura";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(269, 374);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(52, 13);
+            this.label18.TabIndex = 43;
+            this.label18.Text = "Categoria";
+            // 
+            // cbxCategoriaArmadura
+            // 
+            this.cbxCategoriaArmadura.FormattingEnabled = true;
+            this.cbxCategoriaArmadura.Location = new System.Drawing.Point(327, 368);
+            this.cbxCategoriaArmadura.Name = "cbxCategoriaArmadura";
+            this.cbxCategoriaArmadura.Size = new System.Drawing.Size(117, 21);
+            this.cbxCategoriaArmadura.TabIndex = 44;
             // 
             // CriacaoItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(455, 385);
-            this.Controls.Add(this.tbTipo);
+            this.ClientSize = new System.Drawing.Size(455, 430);
+            this.Controls.Add(this.cbxCategoriaArmadura);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.tbTempoVestir);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.tbMaxModificador);
             this.Controls.Add(this.label13);
@@ -445,6 +530,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox tbMaxModificador;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox tbTipo;
+        private System.Windows.Forms.ComboBox cbTipo;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox tbTempoVestir;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox cbxCategoriaArmadura;
     }
 }

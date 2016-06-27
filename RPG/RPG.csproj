@@ -117,8 +117,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VO\Dano.cs" />
     <Compile Include="VO\Dinheiro.cs" />
-    <Compile Include="VO\Item\Equipamentos\Arma.cs" />
-    <Compile Include="VO\Item\Equipamentos\Armadura.cs" />
+    <Compile Include="VO\Itens\Equipamentos\Arma.cs" />
+    <Compile Include="VO\Itens\Equipamentos\Armadura.cs" />
+    <Compile Include="VO\Itens\Item.cs" />
     <EmbeddedResource Include="View\ConsultarAventura.resx">
       <DependentUpon>ConsultarAventura.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,8 +170,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="VO\Item\Bugigangas\" />
-    <Folder Include="VO\Item\Montarias\" />
+    <Folder Include="VO\Itens\Montarias\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

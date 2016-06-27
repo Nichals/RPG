@@ -24,6 +24,10 @@ namespace RPG.VO.Item.Equipamentos
             this.propriedades = propriedades;
             this.categoria = categoria;
         }
+        public Arma()
+        {
+
+        }
 
         public override String ToString()
         {
