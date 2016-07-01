@@ -17,13 +17,13 @@ namespace RPG.VO.Item.Equipamentos
         public float peso { get; set; }
         public int vestir { get; set; }
         public int remover { get; set; }
-        public String unidadeMedidaVestirRemover { get; set; }
         public String categoria { get; set; }
+        public string propriedades { get; set; }
 
 
         public Armadura()
         {
-
+            this.valor = new Dinheiro();
         }
         
 
